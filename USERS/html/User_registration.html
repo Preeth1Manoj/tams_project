@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration</title>
+    <link rel="stylesheet" href="/css/user_registration.css">
+</head>
+<body>
+    <div class="form-container">
+        <h2>Registration Form</h2>
+        <form method="post" action="mycode.py" onsubmit="return myformvalfn(this)">
+            <label for="txtfirstname">First Name:</label>
+            <input type="text" name="txtfirstname" id="txtfirstname">
+            <p id="firstnameerror"></p>
+
+            <label for="txtlastname">Last Name:</label>
+            <input type="text" name="txtlastname" id="txtlastname">
+            <p id="lastnameerror"></p>
+
+            <label for="txtemail">Email:</label>
+            <input type="email" name="txtemail" id="txtemail">
+            <p id="emailerror"></p>
+
+            <label for="txtphnum">Phone Number:</label>
+            <input type="tel" name="txtphnum" id="txtphnum">
+            <p id="phonenumbererror"></p>
+
+            <label for="txtpwd">Password:</label>
+            <input type="password" name="txtpwd" id="txtpwd">
+            <p id="passworderror"></p>
+
+            <label for="cnftxtpwd">Confirm Password:</label>
+            <input type="password" name="cnftxtpwd" id="cnftxtpwd">
+            <p id="cnfpassworderror"></p>
+
+            <input type="submit" value="Register">
+            <input type="reset" value="Clear" id="resetButton">
+        </form>
+    </div>
+
+    <!-- External JavaScript -->
+    <script src="/js/user_registration.js"></script>
+</body>
+</html>

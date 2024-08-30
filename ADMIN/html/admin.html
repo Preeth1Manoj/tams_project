@@ -1,0 +1,304 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Training Academy Management System</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/f17626030c.js" crossorigin="anonymous"></script>
+  
+</head>
+<body>
+  <header>
+    <div class="header-left">
+      <a href="#" class="logo">
+        <i class="fas fa-graduation-cap"></i>
+        <span>TAMS</span>
+      </a>
+    </div>
+    <div id="he">
+      <i class="fas fa-dashboard"></i>
+      <span>Dashboard</span>
+      <span>Users</span>
+      <span>Enquiries</span>
+    </div>
+    <div class="header-right">
+    
+      <div class="search-bar">
+        <input type="text" placeholder="Search...">
+        <button><i class="fas fa-search"></i></button>
+      </div>
+      <div class="user-profile">
+        <img src="user-avatar.png" alt="User Avatar" class="user-avatar">
+        <span class="username">Admin</span>
+        <i class="fas fa-chevron-down"></i>
+      </div>
+      <div class="notifications">
+        <i class="fas fa-bell"></i>
+        <span class="notification-count">3</span>
+      </div>
+    </div>
+  </header>
+
+  <nav class="sidebar">
+    <ul>
+      <li><a href="#" class="active"><i class="fas fa-tachometer-alt"></i> Dashboard</a></li>
+      <li class="has-submenu">
+        <a href="#" class="toggle-submenu"><i class="fas fa-users"></i> User Management <i class="fas fa-chevron-down"></i></a>
+        <ul class="submenu">
+            <li><a href="users.html">User List</a></li>
+            <li><a href="#add-user">Add User</a></li>
+            <li><a href="#activity-log">Activity Log</a></li>
+        </ul>
+    </li>
+      <li><a href="course.html"><i class="fas fa-book"></i> Course Management <i class="fas fa-chevron-down"></i></a></li>
+      <li><a href="#"><i class="fas fa-envelope"></i> Enquiry Status  <i class="fas fa-chevron-down"></i></a></li>
+  </ul>
+  </nav>
+
+  <main>
+    <section class="activity-feed">
+     <h2>ADMIN / Dashboard </h2>
+      <button id="activity"><b>ACTIVITY LOG</b></button>
+    </section>
+    <section class="dashboard-overview">
+      <div class="overview-card">
+        <div class="card-header">
+          <i class="fas fa-users"></i>
+          <h2>Users</h2>
+        </div>
+        <div class="card-content">
+          <p class="count">34</p>
+          <div class="progress-bar">
+            <div class="progress" style="width: 75%;"></div>
+          </div>
+        </div>
+      </div>
+      <div class="overview-card">
+        <div class="card-header">
+          <i class="fas fa-book"></i>
+          <h2>Courses</h2>
+        </div>
+        <div class="card-content">
+          <p class="count">78</p>
+          <div class="progress-bar">
+            <div class="progress" style="width: 50%;"></div>
+          </div>
+        </div>
+      </div>
+      <div class="overview-card">
+        <div class="card-header">
+          <i class="fas fa-chart-line"></i>
+          <h2>Enquiries</h2>
+        </div>
+        <div class="card-content">
+          <p class="count">456</p>
+          <div class="progress-bar">
+            <div class="progress" style="width: 65%;"></div>
+          </div>
+        </div>
+      </div>
+      <div class="quick-actions">
+        <button class="btn">
+          <i class="fas fa-plus"></i>
+          Add New Course
+        </button><br>
+        <button class="btn">
+          <i class="fas fa-users"></i>
+          Manage Users
+        </button>
+      </div>
+
+    </section>
+
+  </main>
+
+  <footer>
+    <div class="footer-links">
+      <a href="#">
+        <i class="fas fa-life-ring"></i>
+        Support
+      </a>
+      <a href="#">
+        <i class="fas fa-question-circle"></i>
+        FAQ
+      </a>
+      <a href="#">
+        <i class="fas fa-file-alt"></i>
+        Terms of Service
+      </a>
+    </div>
+    <div class="copyright">
+      &copy; 2023 Training Academy Management System. All rights reserved.
+    </div>
+  </footer>
+
+
+  </script>
+</body> </html>-->
+
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TAMS Admin Dashboard</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="/ADMIN/css/style.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+    <header>
+        <div class="header-left">
+            <a href="#" class="logo">TAMS</a>
+        </div>
+        <div class="header-right">
+            <div class="search-bar">
+                <input type="text" placeholder="Search...">
+            </div>
+            <div class="user-profile">
+                <img src="user-avatar.png" alt="User Avatar" class="user-avatar">
+                <span class="username">Admin</span>
+            </div>
+            <div class="notifications">
+              
+                <i class="fas fa-bell"></i>
+                <span class="notification-count">3</span>
+            </div>
+        </div>
+    </header>
+
+    <nav class="sidebar">
+        <ul>
+            <li><a href="admin.html" class="active"><i class="fas fa-tachometer-alt"></i>Dashboard</a></li>
+            <li class="has-submenu">
+                <a href="#"><i class="fas fa-users"></i>User Management</a>
+                
+                <ul class="submenu">
+                    <li><a href="users.html">User List</a></li>
+                    <li><a href="adduser.html">Add User</a></li>
+                    <li><a href="#activity-log">Activity Log</a></li>
+                </ul>
+            </li>
+            <li><a href="course.html"><i class="fas fa-book"></i>Course Management</a></li>
+            <li><a href="#"><i class="fas fa-question-circle"></i>Enquiry Status</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section class="activity-feed">
+            <h2>ADMIN / Dashboard</h2>
+            <!-- <p><strong>ACTIVITY LOG</strong></p> -->
+            <button id="activity"><b>ACTIVITY LOG</b></button>
+        </section>
+
+        <section class="dashboard-overview">
+            <div class="overview-card">
+                <div class="card-header">
+                    <i class="fas fa-users"></i>
+                    <h3>Users</h3>
+                </div>
+                <div class="card-content">
+                    <div class="count">34</div>
+                    <div class="progress-bar">
+                        <div class="progress" style="width: 75%;"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="overview-card">
+                <div class="card-header">
+                    <i class="fas fa-book"></i>
+                    <h3>Courses</h3>
+                </div>
+                <div class="card-content">
+                    <div class="count">78</div>
+                    <div class="progress-bar">
+                        <div class="progress" style="width: 50%;"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="overview-card">
+                <div class="card-header">
+                    <i class="fas fa-question-circle"></i>
+                    <h3>Enquiries</h3>
+                </div>
+                <div class="card-content">
+                    <div class="count">456</div>
+                    <div class="progress-bar">
+                        <div class="progress" style="width: 65%;"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="quick-actions">
+            <a href="#" class="btn"><i class="fas fa-plus"></i>Add New Course</a>
+            <a href="#" class="btn"><i class="fas fa-cog"></i>Manage Users</a>
+        </section>
+
+        <section class="chart-container">
+            <canvas id="enrollmentChart"></canvas>
+        </section>
+    </main>
+
+    <footer>
+      <div class="footer-links">
+        <a href="#">
+          <i class="fas fa-life-ring"></i>
+          Support
+        </a>
+        <a href="#">
+          <i class="fas fa-question-circle"></i>
+          FAQ
+        </a>
+        <a href="#">
+          <i class="fas fa-file-alt"></i>
+          Terms of Service
+        </a>
+      </div>
+      <div class="copyright">
+        &copy; 2023 Training Academy Management System. All rights reserved.
+      </div>
+    </footer>
+
+    <script>
+        // Toggle submenu
+        document.querySelectorAll('.has-submenu > a').forEach(item => {
+            item.addEventListener('click', event => {
+                event.preventDefault();
+                item.parentElement.classList.toggle('active');
+            });
+        });
+
+        // Chart.js
+        const ctx = document.getElementById('enrollmentChart').getContext('2d');
+        new Chart(ctx, {
+            type: 'bar',
+            data: {
+                labels: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun'],
+                datasets: [{
+                    label: 'Course Enrollments',
+                    data: [12, 19, 3, 5, 2, 3],
+                    backgroundColor: 'rgba(26, 115, 232, 0.8)',
+                    borderColor: 'rgba(26, 115, 232, 1)',
+                    borderWidth: 1
+                }]
+            },
+            options: {
+                responsive: true,
+                scales: {
+                    y: {
+                        beginAtZero: true
+                    }
+                }
+            }
+        });
+    </script>
+</body>
+</html>
