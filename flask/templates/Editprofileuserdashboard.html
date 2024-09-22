@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edit Profile</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/Editprofileuserboard.css') }}">
+    <script src="https://kit.fontawesome.com/f17626030c.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <!-- Sidebar -->
+    <div class="sidebar">
+        <div class="sidebar-header">
+            <img src="{{ url_for('static', filename='images/samplelogo.jpg') }}" alt="Insert logo" height="100px" width="100px">
+            <h2>SAP</h2>
+        </div>
+        <div class="user-info">
+            <img src="{{ url_for('static', filename='images/user pfp.jpg') }}" alt="User Image">
+            <p>{{ user.first_name }} {{ user.last_name }}<br><span>User</span></p>
+        </div>
+        <ul class="menu">
+            <li><a href="/userdashboard"><i class="fa-solid fa-gauge-high fa-lg"></i> Dashboard</a></li>
+            <li><a href="/editprofile" class="active"><i class="fa-solid fa-user-pen fa-lg" style="color: #001842;"></i> Edit Profile</a></li>
+            <li><a href="/changepassword"><i class="fa-solid fa-lock fa-lg" style="color: #031430;"></i> Change Password</a></li>
+            <li><a href="/viewenquiries"><i class="fa-solid fa-clipboard-question fa-lg" style="color: #020a17;"></i> View Enquiries</a></li>
+            <li><a href="/logout"><i class="fa-solid fa-right-from-bracket fa-lg" style="color: #06142d;"></i> Logout</a></li>
+        </ul>
+    </div>
+
+    <div class="main-content">
+        <div class="top-nav">
+            <div class="search-bar">
+                <input type="text" placeholder="Search">
+            </div>
+            <div class="nav-icons">
+                <a href="#">Home</a>
+                <a href="#">About Us</a>
+                <a href="#">Course</a>
+                <div class="user-profile">
+                    <img src="{{ url_for('static', filename='images/user pfp.jpg') }}" alt="{{ user.first_name }}">
+                    <p>{{ user.first_name }}</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="bodycontent">
+            <form method="POST" action="/editprofile" enctype="multipart/form-data">
+                <div class="image-upload">
+                    <img id="uploadimg" src="{{ url_for('static', filename='images/user pfp.jpg') }}" height="100px" width="100px">
+                </div>
+                
+
+                <p id="nameofuserprofile">First Name :
+                    <input type="text" name="first_name" value="{{ user.first_name }}" id="inputofnameofuserprofile">
+                </p>
+                <p id="nameofuserprofile">Last Name :
+                    <input type="text" name="last_name" value="{{ user.last_name }}" id="inputoflastnameofuserprofile">
+                </p>
+                <p id="emailofuserprofile">Email :
+                    <input type="email" name="email" value="{{ user.email }}" id="inputofemailofuserprofile">
+                </p>
+                <p id="phonenumberofuser">Phone No :
+                    <input type="tel" name="phone" value="{{ user.phone }}" id="inputofphonenumberofuser">
+                </p>
+                <p id="userage">Age:
+                    <input type="number" name="age" value="{{ user.age }}" id="inputofuserage">
+                </p>
+                <p id="useryearofpassout">Year of passout :
+                    <input type="text" name="passout_year" value="{{ user.passout_year }}" id="inputofuseryearofpassout">
+                </p>
+                <p id="addressofuser">Address:
+                    <textarea id="inputofaddressofuser" name="address" rows="3">{{ user.address }}</textarea>
+                </p>
+
+                <button type="submit">Save</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

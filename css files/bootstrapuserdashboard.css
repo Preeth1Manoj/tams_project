@@ -1,0 +1,70 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    display: flex;
+    background-color: #f8f9fa;
+}
+
+.sidebar {
+    width: 250px;
+    background-color: #343a40;
+    height: 100vh;
+    padding: 10px;
+    position: fixed;
+}
+
+.sidebar-header {
+    font-size: 24px;
+    font-weight: bold;
+    color: #fff;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.user-info p {
+    margin: 0;
+    font-size: 14px;
+    color: #fff;
+}
+
+.user-info span {
+    color: #ccc;
+    font-size: 12px;
+}
+
+.menu a {
+    text-decoration: none;
+    color: #ccc;
+    font-size: 16px;
+    padding: 10px 15px;
+    display: block;
+    border-radius: 5px;
+}
+
+.menu a.active, .menu a:hover {
+    background-color: #007bff;
+    color: #fff;
+}
+
+.main-content {
+    margin-left: 260px;
+    padding: 20px;
+    width: calc(100% - 260px);
+}
+
+.top-nav .search-bar {
+    flex-grow: 1;
+}
+
+.top-nav input {
+    padding: 8px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    width: 100%;
+}
+
+.card {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}

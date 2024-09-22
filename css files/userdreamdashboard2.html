@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="userdreamdashboard2.css">
+    <script src="https://kit.fontawesome.com/f17626030c.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <!-- Sidebar -->
+    <div class="sidebar">
+        <div class="sidebar-header">
+            <img src="/images/samplelogo.jpg" alt="Insert logo" height="100px" width="100px">
+            <h2>SAP</h2>
+        </div>
+        <div class="user-info">
+            <img src="/images/user pfp.jpg" alt="User Image">
+            <p>Barry Allen<br><span>User</span></p>
+        </div>
+        <ul class="menu">
+            <li><a href="Userdreamdashboard.html" class="active"><i class="fa-solid fa-gauge-high fa-lg"></i> Dashboard</a></li>
+            <li><a href="Editprofileuserdashboard.html"><i class="fa-solid fa-user-pen fa-lg"></i> Edit Profile</a></li>
+            <li><a href="changepassworduserdashboard.html"><i class="fa-solid fa-lock fa-lg"></i> Change Password</a></li>
+            <li><a href="viewenquiryuserdashboard.html"><i class="fa-solid fa-clipboard-question fa-lg"></i> View Enquiries</a></li>
+            <li><a href="#"><i class="fa-solid fa-right-from-bracket fa-lg"></i> Logout</a></li>
+        </ul>
+    </div>
+
+    <!-- Main Content -->
+    <div class="main-content">
+        <div class="top-nav">
+            <div class="search-bar">
+                <input type="text" placeholder="Search">
+            </div>
+            <div class="nav-icons">
+                <a href="#">Home</a>
+                <a href="#">About Us</a>
+                <a href="#">Course</a>
+                <div class="user-profile">
+                    <img src="/images/user pfp.jpg" alt="Barry Allen">
+                    <p>The Flash</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="dashboard-content">
+            <div class="stats">
+                <div class="stat-box">
+                    <p>Today's Sale</p>
+                    <h3>$1234</h3>
+                </div>
+                <div class="stat-box">
+                    <p>Total Sale</p>
+                    <h3>$1234</h3>
+                </div>
+                <div class="stat-box">
+                    <p>Today's Revenue</p>
+                    <h3>$1234</h3>
+                </div>
+                <div class="stat-box">
+                    <p>Total Revenue</p>
+                    <h3>$1234</h3>
+                </div>
+            </div>
+            <div class="chart-section">
+                <div class="chart-box">
+                    <h3>Worldwide Sales</h3>
+                    <canvas id="salesChart"></canvas>
+                </div>
+                <div class="chart-box">
+                    <h3>Sales & Revenue</h3>
+                    <canvas id="revenueChart"></canvas>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="userdreamdashboard.js"></script>
+</body>
+</html>

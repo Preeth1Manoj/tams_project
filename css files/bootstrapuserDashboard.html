@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="bootstrapuserdashboard.css">
+    <script src="https://kit.fontawesome.com/f17626030c.js" crossorigin="anonymous"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Sidebar -->
+    <div class="sidebar bg-dark text-light">
+        <div class="sidebar-header text-center py-3">
+            <img src="/images/samplelogo.jpg" alt="Insert logo" class="rounded-circle" height="80" width="80">
+            <h4>SAP</h4>
+        </div>
+        <div class="user-info text-center mb-4">
+            <img src="/images/user pfp.jpg" alt="User Image" class="rounded-circle" height="60" width="60">
+            <p>Barry Allen<br><span>User</span></p>
+        </div>
+        <ul class="menu list-unstyled">
+            <li><a href="Userdreamdashboard.html" class="active text-light d-block py-2 px-3"><i class="fa-solid fa-gauge-high fa-lg me-2"></i> Dashboard</a></li>
+            <li><a href="Editprofileuserdashboard.html" class="text-light d-block py-2 px-3"><i class="fa-solid fa-user-pen fa-lg me-2"></i> Edit Profile</a></li>
+            <li><a href="changepassworduserdashboard.html" class="text-light d-block py-2 px-3"><i class="fa-solid fa-lock fa-lg me-2"></i> Change Password</a></li>
+            <li><a href="viewenquiryuserdashboard.html" class="text-light d-block py-2 px-3"><i class="fa-solid fa-clipboard-question fa-lg me-2"></i> View Enquiries</a></li>
+            <li><a href="#" class="text-light d-block py-2 px-3"><i class="fa-solid fa-right-from-bracket fa-lg me-2"></i> Logout</a></li>
+        </ul>
+    </div>
+
+    <!-- Main Content -->
+    <div class="main-content p-4">
+        <div class="top-nav d-flex justify-content-between align-items-center mb-4">
+            <div class="search-bar w-25">
+                <input type="text" class="form-control" placeholder="Search">
+            </div>
+            <div class="nav-icons d-flex align-items-center">
+                <a href="#" class="text-dark me-3">Home</a>
+                <a href="#" class="text-dark me-3">About Us</a>
+                <a href="#" class="text-dark me-3">Courses</a>
+                <div class="user-profile d-flex align-items-center">
+                    <img src="/images/user pfp.jpg" alt="Barry Allen" class="rounded-circle" height="40" width="40">
+                    <p class="mb-0 ms-2">The Flash</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-6">
+                <div class="card p-3 mb-4">
+                    <div class="text-center">
+                        <img src="/images/user pfp.jpg" alt="user" class="rounded-circle mb-3" height="120" width="120">
+                        <h5>Barry Allen</h5>
+                        <span>User</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-6">
+                <div class="card p-3 mb-4">
+                    <h5>Personal Information</h5>
+                    <p>Email: <input type="email" value="iamnottheflash@gmail.com" class="form-control" readonly></p>
+                    <p>Phone No: <input type="tel" value="+91 9962208135" class="form-control" readonly></p>
+                    <p>Age: <input type="number" value="25" class="form-control" readonly></p>
+                    <p>Year of Passout: <input type="text" value="2024" class="form-control" readonly></p>
+                    <p>Address: <input type="text" value="Flash Residency 12th Avenue Flash Street" class="form-control" readonly></p>
+                    <p>Username: <input type="text" value="flash101" class="form-control" readonly></p>
+                    <p>Password: <input type="password" value="thisisapassword" class="form-control" readonly></p>
+                    <p>Confirm Password: <input type="password" value="thisisapassword" class="form-control" readonly></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
